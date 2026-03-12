@@ -1,0 +1,5 @@
+anthropic
+google-generativeai
+openai
+groq
+pypdf
