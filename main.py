@@ -2,6 +2,13 @@
 """interview-prep — AI-powered personalised interview coach."""
 import argparse
 import os
+
+# auto-load .env if present
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    pass
 import sys
 
 PROVIDERS = ["claude", "gemini", "openai", "groq"]
